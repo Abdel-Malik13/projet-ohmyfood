@@ -1,7 +1,13 @@
 @font-face {
-	font-family: 'Shrikhand';
+	font-family: 'Shrikhand Regular';
 	src: url(../polices/Shrikhand-Regular.ttf);
 	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Roboto Bold';
+	src: url(../polices/Roboto-Bold.ttf);
+	font-weight: 700;
 }
 
 @font-face {
@@ -9,6 +15,7 @@
 	src: url(../polices/Roboto-Regular.ttf);
 	font-weight: 400;
 }
+
 
 *, ::before, ::after {
 	margin: 0;
@@ -20,3 +27,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 62.5%;
 }
+
+
+$color-primary: rgb(147, 86, 220);
+$color-secondary: rgb(255, 121, 218);
+$color-tertiary: rgb(153, 226, 208);
+
