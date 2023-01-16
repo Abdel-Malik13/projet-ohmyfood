@@ -4,8 +4,8 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "Shrikhand Bold";
-  src: url(../polices/Shrikhand-Regular.ttf);
+  font-family: "Roboto Bold";
+  src: url(../polices/Roboto-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
@@ -22,6 +22,48 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
+}
+
+.main-header {
+  width: 375px;
+  height: 64px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.location {
+  width: 375px;
+  height: 50px;
+  margin: auto;
+  background-color: #eaeaea;
+}
+
+.book {
+  width: 375px;
+  height: 288px;
+  margin: auto;
+  background-color: #f7f7f7;
+}
+
+.working {
+  width: 375px;
+  height: 440px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.restaurants {
+  width: 375px;
+  height: 1227px;
+  margin: auto;
+  background-color: #f7f7f7;
+}
+
+footer {
+  width: 375px;
+  height: 198px;
+  margin: auto;
+  background-color: rgb(42, 25, 194);
 }
 
 /*# sourceMappingURL=styles.css.map */
