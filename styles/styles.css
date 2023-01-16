@@ -70,5 +70,21 @@ body {
   font-size: 2.2em;
   text-align: center;
 }
+.book p {
+  width: 300px;
+  margin-top: 10px;
+  font-size: 1.6em;
+  text-align: center;
+  color: #666666;
+}
+.book .explore {
+  margin-top: 25px;
+  padding: 17px;
+  border-radius: 50px;
+  font-size: 1.6em;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(85, 13, 179);
+}
 
 /*# sourceMappingURL=styles.css.map */
