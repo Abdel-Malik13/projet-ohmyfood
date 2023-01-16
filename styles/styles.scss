@@ -33,3 +33,45 @@ $color-primary: rgb(147, 86, 220);
 $color-secondary: rgb(255, 121, 218);
 $color-tertiary: rgb(153, 226, 208);
 
+
+.main-header {
+	width: 375px;
+	height: 64px;
+	margin: auto;
+	background-color: #fff;
+}
+
+.location {
+	width: 375px;
+	height: 50px;
+	margin: auto;
+	background-color: #eaeaea;
+}
+
+.book {
+	width: 375px;
+	height: 288px;
+	margin: auto;
+	background-color: #f7f7f7;
+}
+
+.working {
+	width: 375px;
+	height: 440px;
+	margin: auto;
+	background-color: #fff;
+}
+
+.restaurants {
+	width: 375px;
+	height: 1227px;
+	margin: auto;
+	background-color: #f7f7f7;
+}
+
+footer {
+	width: 375px;
+	height: 198px;
+	margin: auto;
+	background-color: rgb(42, 25, 194);
+}
