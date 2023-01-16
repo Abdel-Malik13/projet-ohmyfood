@@ -35,43 +35,63 @@ $color-tertiary: rgb(153, 226, 208);
 
 
 .main-header {
+	// min-width: 375px;
+	display: flex;
 	width: 375px;
 	height: 64px;
+	justify-content: center;
+	align-items: center;
 	margin: auto;
-	background-color: #fff;
+	background-color: rgb(46, 7, 153);
+	// background-color: #fff;
+}
+
+.logo {
+	width: 165px;
+	height: 30px;
 }
 
 .location {
+	display: flex;
 	width: 375px;
 	height: 50px;
+	justify-content: center;
+	align-items: center;
 	margin: auto;
+	font-size: 1.3em;
+	color: #353535;
 	background-color: #eaeaea;
 }
 
-.book {
-	width: 375px;
-	height: 288px;
-	margin: auto;
-	background-color: #f7f7f7;
+.location i {
+	margin-right: 8px;
+	font-size: 1.1em;
 }
 
-.working {
-	width: 375px;
-	height: 440px;
-	margin: auto;
-	background-color: #fff;
-}
+// .book {
+// 	width: 375px;
+// 	height: 288px;
+// 	margin: auto;
+// 	background-color: #f7f7f7;
+// }
 
-.restaurants {
-	width: 375px;
-	height: 1227px;
-	margin: auto;
-	background-color: #f7f7f7;
-}
+// .working {
+// 	width: 375px;
+// 	height: 440px;
+// 	margin: auto;
+// 	background-color: #fff;
+// }
 
-footer {
-	width: 375px;
-	height: 198px;
-	margin: auto;
-	background-color: rgb(42, 25, 194);
-}
+// .restaurants {
+// 	width: 375px;
+// 	height: 1227px;
+// 	margin: auto;
+// 	background-color: #f7f7f7;
+// }
+
+// footer {
+// 	width: 375px;
+// 	height: 198px;
+// 	margin: auto;
+// 	background-color: rgb(42, 25, 194);
+// }
