@@ -87,4 +87,49 @@ body {
   background-color: #b561dc;
 }
 
+.working {
+  display: flex;
+  width: 375px;
+  height: 352px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #fff;
+}
+.working h2 {
+  font-size: 1.8em;
+  align-self: flex-start;
+  margin-left: 15px;
+}
+.working .working-button {
+  position: relative;
+  width: 330px;
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #000;
+  background-color: #f7f7f7;
+}
+.working .working-button i {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #7e7e7e;
+}
+.working .working-button .circle {
+  position: absolute;
+  left: -10px;
+  padding: 11px;
+  border-radius: 50%;
+  background-color: #9356dc;
+}
+.working .working-button:hover {
+  background-color: #f5edff;
+}
+.working .working-button:hover i {
+  color: #9356dc;
+}
+
 /*# sourceMappingURL=styles.css.map */
