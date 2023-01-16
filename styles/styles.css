@@ -35,8 +35,25 @@ body {
 }
 
 .logo {
-  width: 175px;
-  height: 35px;
+  width: 165px;
+  height: 30px;
+}
+
+.location {
+  display: flex;
+  width: 375px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 1.3em;
+  color: #353535;
+  background-color: #eaeaea;
+}
+
+.location i {
+  margin-right: 8px;
+  font-size: 1.1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
