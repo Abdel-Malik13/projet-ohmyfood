@@ -51,6 +51,8 @@ $color-tertiary: rgb(153, 226, 208);
 	height: 30px;
 }
 
+
+
 .location {
 	display: flex;
 	width: 375px;
@@ -61,12 +63,13 @@ $color-tertiary: rgb(153, 226, 208);
 	font-size: 1.3em;
 	color: #353535;
 	background-color: #eaeaea;
+
+	i {
+		margin-right: 8px;
+		font-size: 1.1em;
+	}
 }
 
-.location i {
-	margin-right: 8px;
-	font-size: 1.1em;
-}
 
 .book {
 	display: flex;
@@ -77,13 +80,14 @@ $color-tertiary: rgb(153, 226, 208);
 	align-items: center;
 	margin: auto;
 	background-color: #f7f7f7;
+
+	h1 {
+		width: 250px;
+		font-size: 2.2em;
+		text-align: center;
+	}
 }
 
-.book h1 {
-	width: 250px;
-	font-size: 2.2em;
-	text-align: center;
-}
 
 // .working {
 // 	width: 375px;
