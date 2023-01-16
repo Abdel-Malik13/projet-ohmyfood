@@ -68,12 +68,22 @@ $color-tertiary: rgb(153, 226, 208);
 	font-size: 1.1em;
 }
 
-// .book {
-// 	width: 375px;
-// 	height: 288px;
-// 	margin: auto;
-// 	background-color: #f7f7f7;
-// }
+.book {
+	display: flex;
+	width: 375px;
+	height: 288px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	background-color: #f7f7f7;
+}
+
+.book h1 {
+	width: 250px;
+	font-size: 2.2em;
+	text-align: center;
+}
 
 // .working {
 // 	width: 375px;
