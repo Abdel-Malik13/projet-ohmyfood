@@ -143,10 +143,15 @@ $color-tertiary: rgb(153, 226, 208);
 		}
 
 		.circle {
+			width: 20px;
+			height: 20px;
 			position: absolute;
 			left: -10px;
-			padding: 11px;
+			line-height: 20px;
+			text-align: center;
+			font-size: .7em;
 			border-radius: 50%;
+			color: #fff;
 			background-color: #9356dc;
 		}
 
