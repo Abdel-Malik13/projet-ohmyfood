@@ -37,17 +37,27 @@ $background-primary: #fff;
 $background-secondary: #f7f7f7;
 
 
+@mixin flexCenter($justifyContent, $alignItems) {
+	display: flex;
+	justify-content: $justifyContent;
+	align-items: $alignItems;
+}
+
+@mixin flexAlignContent {
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+
 
 .main-header {
 	// min-width: 375px;
-	display: flex;
 	width: 375px;
 	height: 64px;
-	justify-content: center;
-	align-items: center;
+	@include flexCenter(center, center);
 	margin: auto;
 	background-color: rgb(46, 7, 153);
-	// background-color: #fff;
+	// background-color: $background-primary;
 }
 
 .logo {
@@ -58,11 +68,9 @@ $background-secondary: #f7f7f7;
 
 
 .location {
-	display: flex;
 	width: 375px;
 	height: 50px;
-	justify-content: center;
-	align-items: center;
+	@include flexCenter(center, center);
 	margin: auto;
 	font-size: 1.3em;
 	color: #353535;
@@ -76,12 +84,10 @@ $background-secondary: #f7f7f7;
 
 
 .book {
-	display: flex;
 	width: 375px;
 	height: 288px;
+	@include flexCenter(center, center);
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	margin: auto;
 	background-color: $background-secondary;
 
@@ -106,20 +112,17 @@ $background-secondary: #f7f7f7;
 		font-size: 1.6em;
 		text-decoration: none;
 		color: #fff;
-		background-color: #b561dc;
+		background: linear-gradient($color-primary, $color-secondary);
 	}
 }
 
 
 .working {
-	display: flex;
 	width: 375px;
 	height: 352px;
+	@include flexCenter(center, center);
+	@include flexAlignContent();
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	flex-wrap: wrap;
 	margin: auto;
 	// background-color: #5137e4;
 	background-color: #fff;
@@ -171,14 +174,11 @@ $background-secondary: #f7f7f7;
 }
 
 .restaurants {
-	display: flex;
 	width: 375px;
 	height: 1200px;
+	@include flexCenter(center, center);
+	@include flexAlignContent();
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-	flex-wrap: wrap;
 	gap: 25px;
 	margin: auto;
 	background-color: $background-secondary;
@@ -231,9 +231,9 @@ $background-secondary: #f7f7f7;
 	}
 
 	.text-container {
-		display: flex;
 		width: 100%;
 		height: 70px;
+		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		border-radius: 0 0 15px 15px;
