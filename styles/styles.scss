@@ -32,9 +32,10 @@ body {
 $color-primary: rgb(147, 86, 220);
 $color-secondary: rgb(255, 121, 218);
 $color-tertiary: rgb(153, 226, 208);
+$color-fourthy: rgb(53, 53, 53);
 
-$background-primary: #fff;
-$background-secondary: #f7f7f7;
+$background-primary: rgb(255, 255, 255);
+$background-secondary: rgb(247, 247, 247);
 
 
 @mixin flexCenter($justifyContent, $alignItems) {
@@ -56,8 +57,8 @@ $background-secondary: #f7f7f7;
 	height: 64px;
 	@include flexCenter(center, center);
 	margin: auto;
-	background-color: rgb(46, 7, 153);
-	// background-color: $background-primary;
+	// background-color: rgb(46, 7, 153);
+	background-color: $background-primary;
 }
 
 .logo {
@@ -73,8 +74,8 @@ $background-secondary: #f7f7f7;
 	@include flexCenter(center, center);
 	margin: auto;
 	font-size: 1.3em;
-	color: #353535;
-	background-color: #eaeaea;
+	color: $color-fourthy;
+	background-color: rgb(234, 234, 234);
 
 	i {
 		margin-right: 8px;
@@ -102,7 +103,7 @@ $background-secondary: #f7f7f7;
 		margin-top: 10px;
 		font-size: 1.6em;
 		text-align: center;
-		color: #666666;
+		color: rgb(102, 102, 102);
 	}
 
 	.explore {
@@ -111,7 +112,7 @@ $background-secondary: #f7f7f7;
 		border-radius: 50px;
 		font-size: 1.6em;
 		text-decoration: none;
-		color: #fff;
+		color: rgb(255, 255, 255);
 		background: linear-gradient($color-primary, $color-secondary);
 	}
 }
@@ -125,7 +126,7 @@ $background-secondary: #f7f7f7;
 	flex-direction: column;
 	margin: auto;
 	// background-color: #5137e4;
-	background-color: #fff;
+	background-color: rgb(255, 255, 255);
 
 	h2 {
 		font-size: 1.8em;
@@ -133,21 +134,21 @@ $background-secondary: #f7f7f7;
 	}
 
 	.working-button {
-		position: relative;
 		width: 330px;
+		position: relative;
 		margin-top: 25px;
 		padding: 20px;
 		border-radius: 15px;
 		text-decoration: none;
 		font-size: 1.6em;
-		color: #000;
+		color: rgb(0, 0, 0);
 		background-color: $background-secondary;
 		// background-color: rgb(69, 30, 177);
 
 		i {
 			margin-right: 15px;
 			margin-left: 15px;
-			color: #7e7e7e;
+			color: rgb(126, 126, 126);
 		}
 
 		.circle {
@@ -159,8 +160,8 @@ $background-secondary: #f7f7f7;
 			text-align: center;
 			font-size: .7em;
 			border-radius: 50%;
-			color: #fff;
-			background-color: #9356dc;
+			color: rgb(255, 255, 255);
+			background-color: $color-primary;
 		}
 
 		&:hover {
@@ -184,14 +185,13 @@ $background-secondary: #f7f7f7;
 	background-color: $background-secondary;
 
 	h2 {
-		display: flex;
 		font-size: 1.8em;
 		align-self: flex-start;
 	}
 
 	a {
 		text-decoration: none;
-		color: #000;
+		color: rgb(0, 0, 0);
 	}
 }
 
@@ -217,16 +217,16 @@ $background-secondary: #f7f7f7;
 		}
 
 		.label-new {
-			position: absolute;
 			width: 80px;
 			height: 30px;
+			position: absolute;
 			right: 10px;
 			top: 10px;
 			text-align: center;
 			line-height: 30px;
 			font-size: 1.3em;
-			color: #008766;
-			background-color: #99e2d0;
+			color: rgb(0, 135, 102);
+			background-color: $color-tertiary;
 		}
 	}
 
@@ -237,7 +237,7 @@ $background-secondary: #f7f7f7;
 		justify-content: space-between;
 		align-items: center;
 		border-radius: 0 0 15px 15px;
-		background-color: #fff;
+		background-color: rgb(255, 255, 255);
 		// background-color: rgb(35, 21, 167);
 
 		.text {
@@ -267,7 +267,7 @@ $background-secondary: #f7f7f7;
 	justify-content: center;
 	margin: auto;
 	padding-left: 25px;
-	background-color: #353535;
+	background-color: $color-fourthy;
 
 	.logo-footer {
 		width: 100px;
@@ -291,6 +291,6 @@ $background-secondary: #f7f7f7;
 	a {
 		text-decoration: none;
 		font-size: 1.4em;
-		color: #fff;
+		color: rgb(255, 255, 255);
 	}
 }

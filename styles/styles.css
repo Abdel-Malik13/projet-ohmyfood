@@ -31,7 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  background-color: rgb(46, 7, 153);
+  background-color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -47,8 +47,8 @@ body {
   align-items: center;
   margin: auto;
   font-size: 1.3em;
-  color: #353535;
-  background-color: #eaeaea;
+  color: rgb(53, 53, 53);
+  background-color: rgb(234, 234, 234);
 }
 .location i {
   margin-right: 8px;
@@ -63,7 +63,7 @@ body {
   align-items: center;
   flex-direction: column;
   margin: auto;
-  background-color: #f7f7f7;
+  background-color: rgb(247, 247, 247);
 }
 .book h1 {
   width: 250px;
@@ -75,7 +75,7 @@ body {
   margin-top: 10px;
   font-size: 1.6em;
   text-align: center;
-  color: #666666;
+  color: rgb(102, 102, 102);
 }
 .book .explore {
   margin-top: 25px;
@@ -83,7 +83,7 @@ body {
   border-radius: 50px;
   font-size: 1.6em;
   text-decoration: none;
-  color: #fff;
+  color: rgb(255, 255, 255);
   background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
 }
 
@@ -97,27 +97,27 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   margin: auto;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 .working h2 {
   font-size: 1.8em;
   align-self: flex-start;
 }
 .working .working-button {
-  position: relative;
   width: 330px;
+  position: relative;
   margin-top: 25px;
   padding: 20px;
   border-radius: 15px;
   text-decoration: none;
   font-size: 1.6em;
-  color: #000;
-  background-color: #f7f7f7;
+  color: rgb(0, 0, 0);
+  background-color: rgb(247, 247, 247);
 }
 .working .working-button i {
   margin-right: 15px;
   margin-left: 15px;
-  color: #7e7e7e;
+  color: rgb(126, 126, 126);
 }
 .working .working-button .circle {
   width: 20px;
@@ -128,8 +128,8 @@ body {
   text-align: center;
   font-size: 0.7em;
   border-radius: 50%;
-  color: #fff;
-  background-color: #9356dc;
+  color: rgb(255, 255, 255);
+  background-color: rgb(147, 86, 220);
 }
 .working .working-button:hover {
   background-color: #f5edff;
@@ -149,16 +149,15 @@ body {
   flex-direction: column;
   gap: 25px;
   margin: auto;
-  background-color: #f7f7f7;
+  background-color: rgb(247, 247, 247);
 }
 .restaurants h2 {
-  display: flex;
   font-size: 1.8em;
   align-self: flex-start;
 }
 .restaurants a {
   text-decoration: none;
-  color: #000;
+  color: rgb(0, 0, 0);
 }
 
 .card-restaurant {
@@ -180,16 +179,16 @@ body {
   object-fit: cover;
 }
 .card-restaurant .img-container .label-new {
-  position: absolute;
   width: 80px;
   height: 30px;
+  position: absolute;
   right: 10px;
   top: 10px;
   text-align: center;
   line-height: 30px;
   font-size: 1.3em;
-  color: #008766;
-  background-color: #99e2d0;
+  color: rgb(0, 135, 102);
+  background-color: rgb(153, 226, 208);
 }
 .card-restaurant .text-container {
   width: 100%;
@@ -198,7 +197,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-radius: 0 0 15px 15px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 .card-restaurant .text-container .text {
   margin-left: 15px;
@@ -222,7 +221,7 @@ body {
   justify-content: center;
   margin: auto;
   padding-left: 25px;
-  background-color: #353535;
+  background-color: rgb(53, 53, 53);
 }
 .footer .logo-footer {
   width: 100px;
@@ -242,7 +241,7 @@ body {
 .footer a {
   text-decoration: none;
   font-size: 1.4em;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=styles.css.map */
