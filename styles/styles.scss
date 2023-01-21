@@ -60,7 +60,7 @@ $background-secondary: rgb(247, 247, 247);
 	@include flexCenter(center, center);
 	position: relative;
 	margin: auto;
-	background-color: rgb(46, 7, 153);
+	// background-color: rgb(46, 7, 153);
 	// background-color: $background-primary;
 }
 
@@ -72,7 +72,7 @@ $background-secondary: rgb(247, 247, 247);
 	a {
 		line-height: 64px;
 		margin-left: 25px;
-		font-size: 3em;
+		font-size: 2.5em;
 		color: $color-fourthy;
 	}
 }
@@ -347,8 +347,109 @@ $background-secondary: rgb(247, 247, 247);
 .menu-section {
 	width: 375px;
 	height: 1100px;
-	margin: -60px auto;
-	border-radius: 60px 60px 0 0;
+	display: flex;
+	align-content: space-evenly;
+	flex-wrap: wrap;
+	margin: -60px auto 0;
+	border-radius: 44px 44px 0 0;
 	background-color: $background-secondary;
+
+	.title-menu {
+		width: 100%;
+		// height: 64px;
+		display: flex;
+		justify-content: space-between;
+		margin-left: 15px;
+		margin-right: 45px;
+		align-items: center;
+	
+		.title {
+			font-size: 2.5em;
+		}
+	
+		.title-heart {
+			font-size: 2.5em;
+		}
+	}
 }
 
+.menu {
+	width: 350px;
+	height: auto;
+	display: flex;
+	// justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 15px;
+	margin: auto;
+	// background-color: #280c8b;
+
+	h2 {
+		width: 50px;
+		// align-self: flex-start;
+		padding-bottom: 5px;
+		border-bottom: 4px solid $color-tertiary;
+		text-transform: uppercase;
+		font-size: 2em;
+	}
+
+	.menu-item {
+		width: 100%;
+		height: 70px;
+		display: flex;
+		box-shadow: 0px 0px 15px #c7c7c7;
+		cursor: pointer;
+		border-radius: 15px;
+		// background-color: #734cff;
+
+		.item-text {
+			width: 85%;
+			height: 70px;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			padding-left: 10px;
+			// word-wrap: break-word;
+			// background-color: rgb(33, 30, 206);
+
+			h3 {
+				width: 100%;
+				font-size: 1.8em;
+			}
+
+			p {
+				font-size: 1.6em;
+			}
+		}
+
+		.item-price {
+			width: 15%;
+			height: 70px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			padding-bottom: 15px;
+			font-size: 1.6em;
+			// background-color: rgb(32, 9, 161);
+		}
+
+		.item-select {
+			width: 20%;
+			height: 70px;
+			@include flexCenter(center, center);
+			display: none;
+			border-radius: 0 15px 15px 0;
+			font-size: 2em;
+			color: #fff;
+			background-color: $color-tertiary;
+		}
+
+		&:hover .item-select {
+			display: flex;
+		}
+
+		&:hover .item-text p {
+			text-overflow: ellipsis;
+		}
+	}
+}
