@@ -30,13 +30,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   margin: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(46, 7, 153);
+}
+
+.return-button {
+  width: 50%;
+  height: 64px;
+}
+.return-button a {
+  line-height: 64px;
+  margin-left: 25px;
+  font-size: 3em;
+  color: rgb(53, 53, 53);
 }
 
 .logo {
-  width: 165px;
+  max-width: 165px;
   height: 30px;
+  flex-grow: 1;
+}
+
+.header-right {
+  width: 50%;
+  height: 64px;
 }
 
 .location {
@@ -46,6 +64,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  box-shadow: 0px 2px 6px #bcbcbc inset;
   font-size: 1.3em;
   color: rgb(53, 53, 53);
   background-color: rgb(234, 234, 234);
@@ -214,9 +233,9 @@ body {
 }
 
 .footer {
-  display: flex;
   width: 375px;
   height: 198px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
@@ -242,6 +261,29 @@ body {
   text-decoration: none;
   font-size: 1.4em;
   color: rgb(255, 255, 255);
+}
+
+.img-section {
+  width: 375px;
+  height: 300px;
+  position: relative;
+  z-index: -1;
+  margin: auto;
+  background-color: rgb(38, 22, 175);
+}
+
+.img-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.menu-section {
+  width: 375px;
+  height: 1100px;
+  margin: -60px auto;
+  border-radius: 60px 60px 0 0;
+  background-color: rgb(247, 247, 247);
 }
 
 /*# sourceMappingURL=styles.css.map */
