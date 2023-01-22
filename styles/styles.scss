@@ -1,26 +1,6 @@
-@font-face {
-	font-family: 'Shrikhand Regular';
-	src: url(../polices/Shrikhand-Regular.ttf);
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: 'Roboto Bold';
-	src: url(../polices/Roboto-Bold.ttf);
-	font-weight: 700;
-}
-
-@font-face {
-	font-family: 'Roboto Light';
-	src: url(../polices/Roboto-Light.ttf);
-	font-weight: 700;
-}
-
-@font-face {
-	font-family: 'Roboto';
-	src: url(../polices/Roboto-Regular.ttf);
-	font-weight: 400;
-}
+@import '_fonts.scss';
+@import '_variables.scss';
+@import '_mixins.scss';
 
 
 
@@ -33,28 +13,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 62.5%;
-}
-
-
-$color-primary: rgb(147, 86, 220);
-$color-secondary: rgb(255, 121, 218);
-$color-tertiary: rgb(153, 226, 208);
-$color-fourthy: rgb(53, 53, 53);
-
-$background-primary: rgb(255, 255, 255);
-$background-secondary: rgb(247, 247, 247);
-
-
-
-@mixin flexCenter($justifyContent, $alignItems) {
-	display: flex;
-	justify-content: $justifyContent;
-	align-items: $alignItems;
-}
-
-@mixin flexAlignContent {
-	align-content: center;
-	flex-wrap: wrap;
 }
 
 
