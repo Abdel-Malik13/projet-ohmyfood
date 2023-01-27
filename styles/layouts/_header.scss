@@ -1,0 +1,34 @@
+.main-header {
+	// min-width: 375px;
+	width: 375px;
+	height: 64px;
+	@include flexCenter(center, center);
+	position: relative;
+	margin: auto;
+	// background-color: rgb(46, 7, 153);
+	background-color: $background-primary;
+}
+
+.return-button {
+	width: 50%;
+	height: 64px;
+	// background-color: #9356dc;
+
+	a {
+		line-height: 64px;
+		margin-left: 25px;
+		font-size: 2.5em;
+		color: $color-fourthy;
+	}
+}
+
+.logo {
+	max-width: 165px;
+	height: 30px;
+	flex-grow: 1;
+}
+
+.header-right {
+	width: 50%;
+	height: 64px;
+}

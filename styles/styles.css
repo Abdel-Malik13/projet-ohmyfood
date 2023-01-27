@@ -101,7 +101,8 @@ body {
   text-align: center;
   color: rgb(102, 102, 102);
 }
-.book .explore {
+
+.explore {
   margin-top: 25px;
   padding: 13px 20px;
   border-radius: 50px;
@@ -127,7 +128,8 @@ body {
   font-size: 1.8em;
   align-self: flex-start;
 }
-.working .working-button {
+
+.working-button {
   width: 330px;
   position: relative;
   margin-top: 25px;
@@ -138,12 +140,12 @@ body {
   color: rgb(0, 0, 0);
   background-color: rgb(247, 247, 247);
 }
-.working .working-button i {
+.working-button i {
   margin-right: 15px;
   margin-left: 15px;
   color: rgb(126, 126, 126);
 }
-.working .working-button .circle {
+.working-button .circle {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -155,10 +157,10 @@ body {
   color: rgb(255, 255, 255);
   background-color: rgb(147, 86, 220);
 }
-.working .working-button:hover {
+.working-button:hover {
   background-color: #f5edff;
 }
-.working .working-button:hover i {
+.working-button:hover i {
   color: #9356dc;
 }
 
@@ -235,37 +237,6 @@ body {
 .card-restaurant .text-container .heart {
   font-size: 2em;
   margin-right: 25px;
-}
-
-.footer {
-  width: 375px;
-  height: 198px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  padding-left: 25px;
-  background-color: rgb(53, 53, 53);
-}
-.footer .logo-footer {
-  width: 100px;
-  height: 20px;
-  margin-bottom: 10px;
-}
-.footer ul {
-  list-style: none;
-}
-.footer ul li {
-  margin-top: 10px;
-}
-.footer ul li i {
-  width: 10px;
-  margin-right: 15px;
-}
-.footer a {
-  text-decoration: none;
-  font-size: 1.4em;
-  color: rgb(255, 255, 255);
 }
 
 .img-section {
@@ -393,6 +364,37 @@ body {
   color: #fff;
   box-shadow: 0 0 15px rgb(200, 195, 195);
   background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
+}
+
+.footer {
+  width: 375px;
+  height: 198px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding-left: 25px;
+  background-color: rgb(53, 53, 53);
+}
+.footer .logo-footer {
+  width: 100px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li {
+  margin-top: 10px;
+}
+.footer ul li i {
+  width: 10px;
+  margin-right: 15px;
+}
+.footer a {
+  text-decoration: none;
+  font-size: 1.4em;
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=styles.css.map */
