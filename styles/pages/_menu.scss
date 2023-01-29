@@ -57,6 +57,8 @@
 		border-bottom: 4px solid $color-tertiary;
 		font-family: 'Roboto Light';
 		text-transform: uppercase;
+		opacity: 0%;
+		animation: showMenuAnimation 1s .6s forwards;
 		font-size: 2em;
 	}
 
@@ -66,6 +68,7 @@
 		display: flex;
 		box-shadow: 0px 0px 15px #c7c7c7;
 		border-radius: 15px;
+		opacity: 0%;
 		cursor: pointer;
 		// background-color: #734cff;
 
@@ -123,7 +126,24 @@
 			text-overflow: ellipsis;
 		}
 	}
+
+
+
+	.menu-item:nth-child(1) {
+		animation: showMenuAnimation 1s .6s forwards;
+	}
+	.menu-item:nth-child(2) {
+		animation: showMenuAnimation 1s .8s forwards;
+	}
+	.menu-item:nth-child(3) {
+		animation: showMenuAnimation 1s 1s forwards;
+	}
+	.menu-item:nth-child(4) {
+		animation: showMenuAnimation 1s 1.2s forwards;
+	}
+
 }
+
 
 
 .buy-link {

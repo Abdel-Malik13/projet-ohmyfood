@@ -294,6 +294,8 @@ body {
   border-bottom: 4px solid rgb(153, 226, 208);
   font-family: "Roboto Light";
   text-transform: uppercase;
+  opacity: 0%;
+  animation: showMenuAnimation 1s 0.6s forwards;
   font-size: 2em;
 }
 .menu .menu-item {
@@ -302,6 +304,7 @@ body {
   display: flex;
   box-shadow: 0px 0px 15px #c7c7c7;
   border-radius: 15px;
+  opacity: 0%;
   cursor: pointer;
 }
 .menu .menu-item .item-text {
@@ -347,6 +350,18 @@ body {
 }
 .menu .menu-item:hover .item-text p {
   text-overflow: ellipsis;
+}
+.menu .menu-item:nth-child(1) {
+  animation: showMenuAnimation 1s 0.6s forwards;
+}
+.menu .menu-item:nth-child(2) {
+  animation: showMenuAnimation 1s 0.8s forwards;
+}
+.menu .menu-item:nth-child(3) {
+  animation: showMenuAnimation 1s 1s forwards;
+}
+.menu .menu-item:nth-child(4) {
+  animation: showMenuAnimation 1s 1.2s forwards;
 }
 
 .buy-link {
@@ -395,6 +410,17 @@ body {
   text-decoration: none;
   font-size: 1.4em;
   color: rgb(255, 255, 255);
+}
+
+@keyframes showMenuAnimation {
+  0% {
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
