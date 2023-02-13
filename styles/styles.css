@@ -27,6 +27,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
+  height: 100vh;
 }
 
 .main-header {
@@ -60,6 +61,62 @@ body {
 .header-right {
   width: 50%;
   height: 64px;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation: loader 0s linear 3s forwards;
+  z-index: 1;
+  background-color: #9356dc;
+}
+
+.loader-spinner {
+  position: relative;
+  width: 120px;
+  height: 14px;
+  border-radius: 0 0 15px 15px;
+  background-color: #3e494d;
+  box-shadow: 0 -1px 4px #5d6063 inset;
+  animation: panAnimation 0.5s linear alternate infinite;
+  transform-origin: 170px 0;
+  z-index: 10;
+  perspective: 300px;
+}
+.loader-spinner::before {
+  content: "";
+  position: absolute;
+  left: calc(100% - 2px);
+  top: 0;
+  z-index: -2;
+  height: 10px;
+  width: 70px;
+  border-radius: 0 4px 4px 0;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#6c4924, #4b2d21), linear-gradient(#4d5457 24px, transparent 0), linear-gradient(#9f9e9e 24px, transparent 0);
+  background-size: 50px 10px, 4px 8px, 24px 4px;
+  background-position: right center, 17px center, 0px center;
+}
+.loader-spinner::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -2;
+  transform: translate(-50%, -20px) rotate3d(75, -2, 3, 78deg);
+  width: 55px;
+  height: 53px;
+  background: #fff;
+  background-image: radial-gradient(circle 3px, rgba(255, 255, 255, 0.4) 90%, transparent 10%), radial-gradient(circle 12px, #ffc400 90%, transparent 10%), radial-gradient(circle 12px, #ffae00 100%, transparent 0);
+  background-repeat: no-repeat;
+  background-position: -4px -6px, -2px -2px, -1px -1px;
+  box-shadow: -2px -3px rgba(0, 0, 0, 0.1333333333) inset, 0 0 4px rgba(0, 0, 0, 0.2) inset;
+  border-radius: 47% 36% 50% 50%/49% 45% 42% 44%;
+  animation: eggsAnimation 1s ease-out infinite;
 }
 
 .location {
@@ -111,6 +168,9 @@ body {
   color: rgb(255, 255, 255);
   background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
 }
+.explore:hover {
+  background: linear-gradient(rgb(163, 112, 226), rgb(245, 143, 216));
+}
 
 .working {
   width: 375px;
@@ -125,7 +185,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 .working h2 {
-  font-size: 1.8em;
+  font-size: 2.2em;
   align-self: flex-start;
 }
 
@@ -178,7 +238,7 @@ body {
   background-color: rgb(247, 247, 247);
 }
 .restaurants h2 {
-  font-size: 1.8em;
+  font-size: 2.2em;
   align-self: flex-start;
 }
 .restaurants a {
@@ -229,14 +289,19 @@ body {
   margin-left: 15px;
 }
 .card-restaurant .text-container h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 .card-restaurant .text-container p {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 .card-restaurant .text-container .heart {
-  font-size: 2em;
+  font-size: 2.2em;
   margin-right: 25px;
+}
+.card-restaurant .text-container .heart:hover i {
+  color: rgb(147, 86, 220);
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .img-section {
@@ -258,6 +323,7 @@ body {
   width: 375px;
   height: auto;
   display: flex;
+  flex-direction: column;
   align-content: space-evenly;
   flex-wrap: wrap;
   margin: -60px auto 0;
@@ -265,11 +331,10 @@ body {
   background-color: rgb(247, 247, 247);
 }
 .menu-section .title-menu {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 45px 0 15px;
+  margin: 30px 34px 0 0px;
 }
 .menu-section .title-menu .title {
   font-size: 2.5em;
@@ -277,6 +342,11 @@ body {
 }
 .menu-section .title-menu .title-heart {
   font-size: 2.5em;
+}
+.menu-section .title-menu .title-heart:hover i {
+  color: rgb(147, 86, 220);
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .menu {
@@ -314,13 +384,20 @@ body {
   flex-wrap: wrap;
   align-content: center;
   padding-left: 10px;
+  overflow: hidden;
 }
 .menu .menu-item .item-text h3 {
   width: 100%;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 1.8em;
 }
 .menu .menu-item .item-text p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 1.6em;
 }
 .menu .menu-item .item-price {
@@ -388,6 +465,9 @@ body {
   box-shadow: 0 0 15px rgb(200, 195, 195);
   background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
 }
+.button-buy:hover {
+  background: linear-gradient(rgb(163, 112, 226), rgb(245, 143, 216));
+}
 
 .footer {
   width: 375px;
@@ -436,6 +516,42 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+@keyframes eggsAnimation {
+  0%, 100% {
+    transform: translate(-50%, -20px) rotate3d(90, 0, 0, 90deg);
+    opacity: 0;
+  }
+  10%, 90% {
+    transform: translate(-50%, -30px) rotate3d(90, 0, 0, 90deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(-50%, -40px) rotate3d(85, 17, 2, 70deg);
+  }
+  75% {
+    transform: translate(-50%, -40px) rotate3d(75, -3, 2, 70deg);
+  }
+  50% {
+    transform: translate(-55%, -50px) rotate3d(75, -8, 3, 50deg);
+  }
+}
+@keyframes panAnimation {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(10deg);
   }
 }
 
