@@ -256,13 +256,39 @@
 
 		.heart {
 			font-size: 2.2em;
-			margin-right: 25px;
+			margin-right: 50px;
+			position: relative;
+
+
+			i {
+				transition: transform .3s ease-in;
+			}
+
+			i:nth-child(1) {
+				transform: scale(1);
+			}
+			i:nth-child(2) {
+				transform: scale(0);
+				color: $color-primary;
+				position: absolute;
+				left: 0;
+			}
+
+			&:hover i:nth-child(1) {
+				transform: scale(0);
+			}
+
+			&:hover i:nth-child(2) {
+				transform: scale(1);
+			}
+
 
 			&:hover i {
-				color: $color-primary;
-				font-weight: 700;
-				cursor: pointer;
+				// color: $color-primary;
+				// font-weight: 700;
+				// cursor: pointer;
 			}
+
 		}
 	}
 }

@@ -297,14 +297,27 @@ body {
 }
 .card-restaurant .text-container .heart {
   font-size: 2.2em;
-  margin-right: 25px;
+  margin-right: 50px;
+  position: relative;
 }
-.card-restaurant .text-container .heart:hover i {
+.card-restaurant .text-container .heart i {
+  transition: transform 0.3s ease-in;
+}
+.card-restaurant .text-container .heart i:nth-child(1) {
+  transform: scale(1);
+}
+.card-restaurant .text-container .heart i:nth-child(2) {
+  transform: scale(0);
   color: rgb(147, 86, 220);
-  font-weight: 700;
-  cursor: pointer;
+  position: absolute;
+  left: 0;
 }
-
+.card-restaurant .text-container .heart:hover i:nth-child(1) {
+  transform: scale(0);
+}
+.card-restaurant .text-container .heart:hover i:nth-child(2) {
+  transform: scale(1);
+}
 .img-section {
   min-width: 375px;
   max-width: 1400px;
@@ -344,12 +357,27 @@ body {
   font-family: "Shrikhand Regular";
 }
 .menu-section .title-menu .title-heart {
+  position: relative;
   font-size: 2.5em;
 }
+.menu-section .title-menu .title-heart i {
+  transition: transform 0.3s ease-in;
+}
 .menu-section .title-menu .title-heart:hover i {
-  color: rgb(147, 86, 220);
-  font-weight: 700;
   cursor: pointer;
+}
+.menu-section .title-menu .title-heart i:nth-child(2) {
+  position: absolute;
+  left: 0;
+  color: rgb(147, 86, 220);
+  transform: scale(0);
+}
+.menu-section .title-menu .title-heart:hover i:nth-child(1) {
+  transform: scale(0);
+}
+.menu-section .title-menu .title-heart:hover i:nth-child(2) {
+  transform: scale(1);
+  color: rgb(147, 86, 220);
 }
 
 .menu {
