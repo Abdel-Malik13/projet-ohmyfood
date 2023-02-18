@@ -31,7 +31,8 @@ body {
 }
 
 .main-header {
-  width: 375px;
+  min-width: 375px;
+  max-width: 1400px;
   height: 64px;
   display: flex;
   justify-content: center;
@@ -120,7 +121,7 @@ body {
 }
 
 .location {
-  width: 375px;
+  width: auto;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -137,7 +138,7 @@ body {
 }
 
 .book {
-  width: 375px;
+  width: auto;
   height: 288px;
   display: flex;
   justify-content: center;
@@ -173,7 +174,7 @@ body {
 }
 
 .working {
-  width: 375px;
+  width: auto;
   height: 352px;
   display: flex;
   justify-content: center;
@@ -225,7 +226,7 @@ body {
 }
 
 .restaurants {
-  width: 375px;
+  width: auto;
   height: 1200px;
   display: flex;
   justify-content: center;
@@ -305,7 +306,8 @@ body {
 }
 
 .img-section {
-  width: 375px;
+  min-width: 375px;
+  max-width: 1400px;
   height: 300px;
   position: relative;
   z-index: -1;
@@ -320,7 +322,8 @@ body {
 }
 
 .menu-section {
-  width: 375px;
+  min-width: 375px;
+  max-width: 1400px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -334,7 +337,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 34px 0 0px;
+  margin: 30px 40px 0 25px;
 }
 .menu-section .title-menu .title {
   font-size: 2.5em;
@@ -350,13 +353,13 @@ body {
 }
 
 .menu {
-  width: 350px;
+  min-width: 350px;
   height: auto;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin: 30px auto 10px;
+  margin: 30px 25px 10px;
 }
 .menu h2 {
   width: 50px;
@@ -470,7 +473,8 @@ body {
 }
 
 .footer {
-  width: 375px;
+  min-width: 375px;
+  max-width: 1400px;
   height: 198px;
   display: flex;
   flex-direction: column;
@@ -552,6 +556,33 @@ body {
   }
   100% {
     transform: rotate(10deg);
+  }
+}
+@media screen and (min-width: 960px) {
+  main-header, .location, .book, .working, .restaurants, .footer {
+    min-width: 375px;
+    max-width: 1400px;
+  }
+  .working {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .working h2 {
+    width: 97%;
+  }
+  .working .working-button {
+    width: 30%;
+  }
+  .restaurants a {
+    width: 97%;
+  }
+  .card-restaurant {
+    width: 100%;
+  }
+  .menu {
+    min-width: 350px;
   }
 }
 

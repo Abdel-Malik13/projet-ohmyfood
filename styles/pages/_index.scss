@@ -62,7 +62,7 @@
 
 
 .location {
-	width: 375px;
+	width: auto;
 	height: 50px;
 	@include flexCenter(center, center);
 	margin: auto;
@@ -80,7 +80,7 @@
 
 
 .book {
-	width: 375px;
+	width: auto;
 	height: 288px;
 	@include flexCenter(center, center);
 	flex-direction: column;
@@ -119,7 +119,7 @@
 
 
 .working {
-	width: 375px;
+	width: auto;
 	height: 352px;
 	@include flexCenter(center, center);
 	@include flexAlignContent();
@@ -177,7 +177,7 @@
 
 
 .restaurants {
-	width: 375px;
+	width: auto;
 	height: 1200px;
 	@include flexCenter(center, center);
 	@include flexAlignContent();

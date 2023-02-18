@@ -1,0 +1,44 @@
+
+@media screen and (min-width: 960px) {
+
+    main-header, .location, .book, .working, .restaurants, .footer {
+        min-width: 375px;
+        max-width: 1400px;
+    }
+
+    .working {
+        @include flexCenter(space-around, center);
+        flex-direction: row;
+
+        h2 {
+            width: 97%;
+        }
+
+        .working-button {
+            width: 30%;
+        }
+    }
+
+
+
+    .restaurants {
+        a {
+            width: 97%;
+        }
+    }
+
+    .card-restaurant {
+        // min-width: 336px;
+        // max-width: 100%;
+        width: 100%;
+    }
+
+
+
+
+
+    .menu {
+        min-width: 350px;
+    }
+
+}

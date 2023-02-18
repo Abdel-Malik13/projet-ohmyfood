@@ -1,11 +1,10 @@
 .main-header {
-	// min-width: 375px;
-	width: 375px;
+	min-width: 375px;
+	max-width: 1400px;
 	height: 64px;
 	@include flexCenter(center, center);
 	position: relative;
 	margin: auto;
-	// background-color: rgb(46, 7, 153);
 	background-color: $background-primary;
 }
 
