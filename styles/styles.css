@@ -195,9 +195,13 @@ body {
   position: relative;
   margin-top: 25px;
   padding: 20px;
+  border: none;
   border-radius: 15px;
+  text-align: left;
   text-decoration: none;
   font-size: 1.6em;
+  z-index: 1;
+  cursor: pointer;
   color: rgb(0, 0, 0);
   background-color: rgb(247, 247, 247);
 }
@@ -218,11 +222,24 @@ body {
   color: rgb(255, 255, 255);
   background-color: rgb(147, 86, 220);
 }
-.working-button:hover {
-  background-color: #f5edff;
+.working-button:hover::after {
+  opacity: 1;
 }
 .working-button:hover i {
   color: #9356dc;
+}
+.working-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s;
+  border-radius: 15px;
+  background-color: #f5edff;
 }
 
 .restaurants {
