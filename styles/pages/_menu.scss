@@ -198,15 +198,33 @@
 .button-buy {
 	width: 185px;
 	height: 50px;
+	position: relative;
 	border-radius: 50px;
 	font-size: 1.6em;
 	text-align: center;
 	line-height: 50px;
+	z-index: 1;
 	color: #fff;
 	box-shadow: 0 0 15px rgb(200 195 195);
 	background: linear-gradient($color-primary, $color-secondary);
 
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		opacity: 0;
+		transition: opacity .3s;
+		border-radius: 50px;
+		background: linear-gradient(lighten($color-secondary, 5), lighten($color-primary, 5));
+	}
+
 	&:hover {
-		background: linear-gradient($color-primary-light, $color-secondary-light);
+		&::after {
+			opacity: 1;
+		}
 	}
 }

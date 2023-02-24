@@ -164,13 +164,30 @@ body {
   margin-top: 25px;
   padding: 13px 20px;
   border-radius: 50px;
+  position: relative;
   font-size: 1.6em;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
   color: rgb(255, 255, 255);
   background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
 }
-.explore:hover {
-  background: linear-gradient(rgb(163, 112, 226), rgb(245, 143, 216));
+.explore::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 50px;
+  transition: opacity 0.3s;
+  background: linear-gradient(#ff93e1, #a16be0);
+}
+.explore:hover::after {
+  opacity: 1;
 }
 
 .working {
@@ -209,6 +226,7 @@ body {
   margin-right: 15px;
   margin-left: 15px;
   color: rgb(126, 126, 126);
+  transition: color 0.3s;
 }
 .working-button .circle {
   width: 20px;
@@ -335,6 +353,7 @@ body {
 .card-restaurant .text-container .heart:hover i:nth-child(2) {
   transform: scale(1);
 }
+
 .img-section {
   min-width: 375px;
   max-width: 1400px;
@@ -505,16 +524,31 @@ body {
 .button-buy {
   width: 185px;
   height: 50px;
+  position: relative;
   border-radius: 50px;
   font-size: 1.6em;
   text-align: center;
   line-height: 50px;
+  z-index: 1;
   color: #fff;
   box-shadow: 0 0 15px rgb(200, 195, 195);
   background: linear-gradient(rgb(147, 86, 220), rgb(255, 121, 218));
 }
-.button-buy:hover {
-  background: linear-gradient(rgb(163, 112, 226), rgb(245, 143, 216));
+.button-buy::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 50px;
+  background: linear-gradient(#ff93e1, #a16be0);
+}
+.button-buy:hover::after {
+  opacity: 1;
 }
 
 .footer {

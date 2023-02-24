@@ -106,13 +106,33 @@
 	margin-top: 25px;
 	padding: 13px 20px;
 	border-radius: 50px;
+	position: relative;
 	font-size: 1.6em;
 	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	z-index: 1;
 	color: rgb(255, 255, 255);
 	background: linear-gradient($color-primary, $color-secondary);
 
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		opacity: 0;
+		border-radius: 50px;
+		transition: opacity .3s;
+		background: linear-gradient(lighten($color-secondary, 5), lighten($color-primary, 5));
+	}
+
 	&:hover {
-		background: linear-gradient($color-primary-light, $color-secondary-light);
+		&::after {
+			opacity: 1;
+		}
 	}
 }
 
@@ -154,6 +174,7 @@
 		margin-right: 15px;
 		margin-left: 15px;
 		color: rgb(126, 126, 126);
+		transition: color .3s;
 	}
 
 	.circle {
@@ -192,12 +213,6 @@
 		border-radius: 15px;
 		background-color: #f5edff;
 	}
-
-	// &::after {
-	// 	content: ;
-	// 	position: absolute;
-	// 	background-color: green;
-	// }
 }
 
 
@@ -307,14 +322,6 @@
 			&:hover i:nth-child(2) {
 				transform: scale(1);
 			}
-
-
-			&:hover i {
-				// color: $color-primary;
-				// font-weight: 700;
-				// cursor: pointer;
-			}
-
 		}
 	}
 }
