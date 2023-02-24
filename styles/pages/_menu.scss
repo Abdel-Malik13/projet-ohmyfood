@@ -5,7 +5,6 @@
 	position: relative;
 	z-index: -1;
 	margin: auto;
-	background-color: rgb(38, 22, 175);
 }
 
 .img-cover {
@@ -60,8 +59,6 @@
 			}
 
 			&:hover i:nth-child(2) {
-				// display: block;
-				// opacity: 1;
 				transform: scale(1);
 				color: $color-primary;
 			}
@@ -70,7 +67,6 @@
 }
 
 .menu {
-	// width: 350px;
 	min-width: 350px;
 	height: auto;
 	display: flex;
@@ -78,7 +74,6 @@
 	flex-wrap: wrap;
 	gap: 15px;
 	margin: 30px 25px 10px;
-	// background-color: #280c8b;
 
 	h2 {
 		width: 50px;
@@ -99,7 +94,6 @@
 		border-radius: 15px;
 		opacity: 0%;
 		cursor: pointer;
-		// background-color: #734cff;
 
 		.item-text {
 			width: 85%;
@@ -109,7 +103,6 @@
 			align-content: center;
 			padding-left: 10px;
 			overflow: hidden;
-			// background-color: rgb(33, 30, 206);
 
 			h3 {
 				width: 100%;
@@ -138,7 +131,6 @@
 			font-size: 1.6em;
 			font-weight: bold;
 			color: $color-fourthy;
-			// background-color: rgb(32, 9, 161);
 		}
 
 		.item-select {
