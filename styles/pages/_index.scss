@@ -235,11 +235,6 @@
 		font-size: 2.2em;
 		align-self: flex-start;
 	}
-
-	a {
-		text-decoration: none;
-		color: rgb(0, 0, 0);
-	}
 }
 
 .card-restaurant {
@@ -247,6 +242,11 @@
 	height: 240px;
 	border-radius: 15px;
 	box-shadow: 1px 1px 10px rgb(215 215 215);
+
+	a {
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+	}
 
 	.img-container {
 		position: relative;
@@ -259,6 +259,7 @@
 			height: 170px;
 			border-radius: 15px 15px 0 0;
 			object-fit: cover;
+			object-position: 50% 100%;
 		}
 
 		.label-new {
@@ -274,22 +275,12 @@
 			background-color: $color-tertiary;
 		}
 	}
-
-	&:nth-child(2) .img-card {
-		object-position: 50% 100%;
-	}
+	
 
 	&:nth-child(3) .img-card {
 		object-position: 50% 60%;
 	}
 
-	&:nth-child(4) .img-card {
-		object-position: 50% 100%;
-	}
-
-	&:nth-child(5) .img-card {
-		object-position: 50% 100%;
-	}
 
 	.text-container {
 		width: 100%;
@@ -341,8 +332,4 @@
 			}
 		}
 	}
-}
-
-.restaurants a .card-restaurant:nth-child(2) {
-	color: #fff;
 }

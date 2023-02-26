@@ -282,16 +282,16 @@ body {
   font-size: 2.2em;
   align-self: flex-start;
 }
-.restaurants a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
 
 .card-restaurant {
   width: 336px;
   height: 240px;
   border-radius: 15px;
   box-shadow: 1px 1px 10px rgb(215, 215, 215);
+}
+.card-restaurant a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 .card-restaurant .img-container {
   position: relative;
@@ -304,6 +304,7 @@ body {
   height: 170px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
+  object-position: 50% 100%;
 }
 .card-restaurant .img-container .label-new {
   width: 80px;
@@ -317,17 +318,8 @@ body {
   color: rgb(0, 135, 102);
   background-color: rgb(153, 226, 208);
 }
-.card-restaurant:nth-child(2) .img-card {
-  object-position: 50% 100%;
-}
 .card-restaurant:nth-child(3) .img-card {
   object-position: 50% 60%;
-}
-.card-restaurant:nth-child(4) .img-card {
-  object-position: 50% 100%;
-}
-.card-restaurant:nth-child(5) .img-card {
-  object-position: 50% 100%;
 }
 .card-restaurant .text-container {
   width: 100%;
@@ -369,10 +361,6 @@ body {
 }
 .card-restaurant .text-container .heart:hover i:nth-child(2) {
   transform: scale(1);
-}
-
-.restaurants a .card-restaurant:nth-child(2) {
-  color: #fff;
 }
 
 .img-section {
@@ -674,11 +662,11 @@ body {
   .working .working-button {
     width: 30%;
   }
-  .restaurants a {
+  .card-restaurant {
     width: 97%;
   }
-  .card-restaurant {
-    width: 100%;
+  .card-restaurant .img-container .img-card {
+    object-position: 50% 50%;
   }
   .menu {
     min-width: 350px;

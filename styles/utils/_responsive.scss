@@ -21,19 +21,15 @@
 
 
 
-    .restaurants {
-        a {
-            width: 97%;
+    .card-restaurant {
+        width: 97%;
+
+        .img-container {
+            .img-card {
+                object-position: 50% 50%;
+            }
         }
     }
-
-    .card-restaurant {
-        // min-width: 336px;
-        // max-width: 100%;
-        width: 100%;
-    }
-
-
 
 
 
